@@ -1,0 +1,10 @@
+---- OMX_Types.h Matches (3 in 3 files) ----
+OMX_ComponentExt.h (omx\openmax):#include <OMX_Types.h>
+OMX_Index.h (omx\openmax):#include <OMX_Types.h>
+OMX_Types.h (omx\openmax):/** OMX_Types.h - OpenMax IL version 1.1.2
+---- OMX_ComponentExt Matches (5 in 1 files) ----
+OMX_ComponentExt.h (omx\openmax):/** OMX_ComponentExt.h - OpenMax IL version 1.1.2
+OMX_ComponentExt.h (omx\openmax): * The OMX_ComponentExt header file contains extensions to the definitions used
+OMX_ComponentExt.h (omx\openmax):#ifndef OMX_ComponentExt_h
+OMX_ComponentExt.h (omx\openmax):#define OMX_ComponentExt_h
+OMX_ComponentExt.h (omx\openmax):#endif /* OMX_ComponentExt_h */

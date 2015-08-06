@@ -1,0 +1,108 @@
+var group__comp =
+[
+    [ "Tunneling", "group__tun.html", "group__tun" ],
+    [ "OMX_PARAM_PORTDEFINITIONTYPE", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html", [
+      [ "audio", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a1658da0c728807eefe86d6671ae04bc2", null ],
+      [ "bBuffersContiguous", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#ae4748ee0c875ad32a3eebb5a4a16312c", null ],
+      [ "bEnabled", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a2d6564b6a96060d887d98fa337e48816", null ],
+      [ "bPopulated", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a430ecb6d216ce528ca4169e5328b2479", null ],
+      [ "eDir", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#ac2b6ccdcbe06b05129eb68d0bbc6854b", null ],
+      [ "eDomain", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a0fbc77ca94e8f7b97bdb4926d3dc13ee", null ],
+      [ "format", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a8fdad175180e464f59937278a7c66ff3", null ],
+      [ "image", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a669522d3c2c1d968b2525bb719642b24", null ],
+      [ "nBufferAlignment", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a3817216311a52fab6cd5096115da7c04", null ],
+      [ "nBufferCountActual", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a27a75903acffddb9933b84b17473583c", null ],
+      [ "nBufferCountMin", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a4085ebc94688a58c1ed80caa4eaf7857", null ],
+      [ "nBufferSize", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a7d36aa2413508456529481b6b11daba9", null ],
+      [ "nPortIndex", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a21e5f69a3a87f12a797ee8e36771e9dc", null ],
+      [ "nSize", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a3e8e7bf57dae02d601c502d64e6d2cf2", null ],
+      [ "nVersion", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#ab623ea82f5c8333460ab1aef68e5e211", null ],
+      [ "other", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a263442d76162e91dd3725870dbdf9404", null ],
+      [ "video", "struct_o_m_x___p_a_r_a_m___p_o_r_t_d_e_f_i_n_i_t_i_o_n_t_y_p_e.html#a8361921b6257c4b79c32c1e0fdab2032", null ]
+    ] ],
+    [ "OMX_PARAM_U32TYPE", "struct_o_m_x___p_a_r_a_m___u32_t_y_p_e.html", [
+      [ "nPortIndex", "struct_o_m_x___p_a_r_a_m___u32_t_y_p_e.html#acfad27e0b6a8b5775bf6f642d4cbe71b", null ],
+      [ "nSize", "struct_o_m_x___p_a_r_a_m___u32_t_y_p_e.html#a1c271d6543eb4f596d1b230586fb87b9", null ],
+      [ "nU32", "struct_o_m_x___p_a_r_a_m___u32_t_y_p_e.html#a776da3a9f45ce58ad85f73b6e4a3077c", null ],
+      [ "nVersion", "struct_o_m_x___p_a_r_a_m___u32_t_y_p_e.html#a10f85bfad3863e68e0b3179f6e9ac0e2", null ]
+    ] ],
+    [ "OMX_COMPONENTTYPE", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html", [
+      [ "AllocateBuffer", "group__buf.html#ga2c1edc85577d36e53c8ca1d3852a3638", null ],
+      [ "ComponentDeInit", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a500e4b59b932bd7e6d1a2d8f397d7c67", null ],
+      [ "ComponentRoleEnum", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a976a69d5a502b51fb17fc8b191de6ead", null ],
+      [ "ComponentTunnelRequest", "group__tun.html#gaeaf4019ea6edc13870951cb43fe9f56a", null ],
+      [ "EmptyThisBuffer", "group__buf.html#gaddab9204cf2616331495801e1ba53317", null ],
+      [ "FillThisBuffer", "group__buf.html#gaf4a321a8054eb3f69ceed82bf8dedcc5", null ],
+      [ "FreeBuffer", "group__buf.html#ga7085000f9f7021871078c0dcd27c07ae", null ],
+      [ "GetComponentVersion", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#ab51127d969e63099131baa5bd58826a7", null ],
+      [ "GetConfig", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a40042eb121e37461ceb851995d450a03", null ],
+      [ "GetExtensionIndex", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a4a6e297f1eacad68a037dcf5ee0f7fa9", null ],
+      [ "GetParameter", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a6dbfc4532045b381d3b2a73e9ddf567b", null ],
+      [ "GetState", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a75a4b01f258ee63eeb8b6185ea6476b9", null ],
+      [ "nSize", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a013b384b3e575097e5b608c7b879451d", null ],
+      [ "nVersion", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a6f5edba81abbdae76457fb17004c8e5f", null ],
+      [ "pApplicationPrivate", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a8c4fef89bceb35cfcf37ef5ed5eef2ac", null ],
+      [ "pComponentPrivate", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#abc8e77802b35b35f7972e9fe7a563ccc", null ],
+      [ "SendCommand", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a7ce31bd07980da3aba9bc0a393e953df", null ],
+      [ "SetCallbacks", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a5643e05728cb15c8e16c1dc1cb39577a", null ],
+      [ "SetConfig", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a0b474b5dd1c0e432e44d2f1ca15984c3", null ],
+      [ "SetParameter", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a0264daf0b4a5a5c91de28533e26fb8a0", null ],
+      [ "UseBuffer", "group__buf.html#ga12c8b01e7b15e27abe461e6f5ec6cc1e", null ],
+      [ "UseEGLImage", "group__buf.html#gaafe5f95cb766d81c7e7ae4a85fb7b53d", null ]
+    ] ],
+    [ "OMX_PARAM_COMPONENTROLETYPE", "struct_o_m_x___p_a_r_a_m___c_o_m_p_o_n_e_n_t_r_o_l_e_t_y_p_e.html", [
+      [ "cRole", "struct_o_m_x___p_a_r_a_m___c_o_m_p_o_n_e_n_t_r_o_l_e_t_y_p_e.html#a7f8494b0b601d83e86a6ecc8f14f11bc", null ],
+      [ "nSize", "struct_o_m_x___p_a_r_a_m___c_o_m_p_o_n_e_n_t_r_o_l_e_t_y_p_e.html#a2708b71d585fd44fe623e1fa12850f1a", null ],
+      [ "nVersion", "struct_o_m_x___p_a_r_a_m___c_o_m_p_o_n_e_n_t_r_o_l_e_t_y_p_e.html#ad87ddc3b8fbd2400cde71f14d654e9b5", null ]
+    ] ],
+    [ "OMX_PORT_PARAM_TYPE", "struct_o_m_x___p_o_r_t___p_a_r_a_m___t_y_p_e.html", [
+      [ "nPorts", "struct_o_m_x___p_o_r_t___p_a_r_a_m___t_y_p_e.html#a36a330eb2118fcd881c39d5ef53a6ca1", null ],
+      [ "nSize", "struct_o_m_x___p_o_r_t___p_a_r_a_m___t_y_p_e.html#a524d6319d8b77b4155d3b6021fb19d2c", null ],
+      [ "nStartPortNumber", "struct_o_m_x___p_o_r_t___p_a_r_a_m___t_y_p_e.html#a5b1f1219288aa43f3e0aa52fb873b423", null ],
+      [ "nVersion", "struct_o_m_x___p_o_r_t___p_a_r_a_m___t_y_p_e.html#a526b00bf9883e0ccb6c106044b3d06c4", null ]
+    ] ],
+    [ "OMX_GetComponentVersion", "group__comp.html#ga611fdef0018d1e69d3a73500f1eea732", null ],
+    [ "OMX_GetConfig", "group__comp.html#gaf9c8886cc3b74a6a855bc2ff2875d22e", null ],
+    [ "OMX_GetExtensionIndex", "group__comp.html#ga32fa78ef3dd631874d243db6c8ce002d", null ],
+    [ "OMX_GetParameter", "group__comp.html#ga6a89d337db473320b65b7d49bc2e2fe9", null ],
+    [ "OMX_GetState", "group__comp.html#gaafadfd2613e24e784ce9491d1b75b1d4", null ],
+    [ "OMX_SendCommand", "group__comp.html#gac6a67973fe58da8faa76e4b5eefe679b", null ],
+    [ "OMX_SetConfig", "group__comp.html#ga855a8a536a3f1c757d863702e526cfcf", null ],
+    [ "OMX_SetParameter", "group__comp.html#gaeea5cdaabb2815c8d6c170410158e5c4", null ],
+    [ "OMX_COMPONENTTYPE", "group__comp.html#ga9989edc7a678c00bd5339f6d710297e2", null ],
+    [ "OMX_EVENTTYPE", "group__comp.html#ga403a820b90a2db32422bfdd3f9bed82e", null ],
+    [ "OMX_PARAM_COMPONENTROLETYPE", "group__comp.html#ga6c7e9c28c12e5cc742e5b0779b075ed2", null ],
+    [ "OMX_PARAM_PORTDEFINITIONTYPE", "group__comp.html#ga9643a35991b01e927b7e4f708e2edff6", null ],
+    [ "OMX_PARAM_U32TYPE", "group__comp.html#ga736495d9c5a1138ca2c602d218433e8d", null ],
+    [ "OMX_PORT_PARAM_TYPE", "group__comp.html#gacf4a721215b1fd0f51568f4eacd0fd23", null ],
+    [ "OMX_PORTDOMAINTYPE", "group__comp.html#ga51c9815c16846723da8d6e52c55cb5c7", null ],
+    [ "OMX_STATETYPE", "group__comp.html#ga63b1f7ceefb1a37620efec6bab8fd625", null ],
+    [ "OMX_EVENTTYPE", "group__comp.html#gaf9babc952e96b0b7e47efa208ef3fb83", [
+      [ "OMX_EventCmdComplete", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83a2c22d11fa183bc941229878a4b41d973", null ],
+      [ "OMX_EventError", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83aeadeacb7957283b27322d5ec3564a7fd", null ],
+      [ "OMX_EventMark", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83a29c0aac8a2b5fe120b7bc0ea4ab2ab19", null ],
+      [ "OMX_EventPortSettingsChanged", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83a93a62b610240fa39252105a47f7ae5c2", null ],
+      [ "OMX_EventBufferFlag", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83a2a9615d7091b47b0474eb3f609b2ec9a", null ],
+      [ "OMX_EventResourcesAcquired", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83a060a446a6b32bbc21b60c391a902b5c6", null ],
+      [ "OMX_EventComponentResumed", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83aa23752f59fbbd998187bc71c60e2af6e", null ],
+      [ "OMX_EventDynamicResourcesAvailable", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83a92e1d080d446f66e4064ea028d37eb12", null ],
+      [ "OMX_EventPortFormatDetected", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83abb7a0d21e6381d8a099eed309a8a3d50", null ],
+      [ "OMX_EventMax", "group__comp.html#ggaf9babc952e96b0b7e47efa208ef3fb83a0e2d5fc3b9e52bd05b0972a940b65e24", null ]
+    ] ],
+    [ "OMX_PORTDOMAINTYPE", "group__comp.html#ga4fcecfaa45ade30700a7db7079c22811", [
+      [ "OMX_PortDomainAudio", "group__comp.html#gga4fcecfaa45ade30700a7db7079c22811a1da61f62c93ad1abcecf25403f0c6d18", null ],
+      [ "OMX_PortDomainVideo", "group__comp.html#gga4fcecfaa45ade30700a7db7079c22811a398a8f467bbea43e0fa52100c05398c9", null ],
+      [ "OMX_PortDomainImage", "group__comp.html#gga4fcecfaa45ade30700a7db7079c22811ad44846d20ed50356bd083b19f1dc6fa7", null ],
+      [ "OMX_PortDomainOther", "group__comp.html#gga4fcecfaa45ade30700a7db7079c22811ac69327a5a8b9180f86a69cf21c3a84d2", null ],
+      [ "OMX_PortDomainMax", "group__comp.html#gga4fcecfaa45ade30700a7db7079c22811a7d5c26cb200d57846fb2c79572c0c9d5", null ]
+    ] ],
+    [ "OMX_STATETYPE", "group__comp.html#gaa5db098e918dd8a710d0ba10f90a0cb9", [
+      [ "OMX_StateInvalid", "group__comp.html#ggaa5db098e918dd8a710d0ba10f90a0cb9ab9a046cf692b4a48d40c503edbac925f", null ],
+      [ "OMX_StateLoaded", "group__comp.html#ggaa5db098e918dd8a710d0ba10f90a0cb9a9451f308f17785a8b768817eb4faa7c6", null ],
+      [ "OMX_StateIdle", "group__comp.html#ggaa5db098e918dd8a710d0ba10f90a0cb9ae87dd9fa7603290b4cd4dafdc104e969", null ],
+      [ "OMX_StateExecuting", "group__comp.html#ggaa5db098e918dd8a710d0ba10f90a0cb9a23edc3556e82e981ad41f7ab9d8ea08e", null ],
+      [ "OMX_StatePause", "group__comp.html#ggaa5db098e918dd8a710d0ba10f90a0cb9affa2690a3c872ec899622e45f04df7e3", null ],
+      [ "OMX_StateWaitForResources", "group__comp.html#ggaa5db098e918dd8a710d0ba10f90a0cb9a64bed325d94b49150e505034a6b4ee11", null ],
+      [ "OMX_StateMax", "group__comp.html#ggaa5db098e918dd8a710d0ba10f90a0cb9a847f804ff7f7825239353c74a50314ed", null ]
+    ] ]
+];

@@ -1,0 +1,27 @@
+var audio__use__case__tunnel_8c =
+[
+    [ "AAC_ROLE", "audio__use__case__tunnel_8c.html#a904dc82884ea6190bb09656d753ac63a", null ],
+    [ "AUDIO_EFFECT", "audio__use__case__tunnel_8c.html#adc8b105dda7fd3c10dbf4da056009a24", null ],
+    [ "COMPONENT_NAME_BASE", "audio__use__case__tunnel_8c.html#aa11d1b9e62f202bc444df7f6e907747e", null ],
+    [ "extradata_size", "audio__use__case__tunnel_8c.html#a97e2466cebe70f70b00f43e012a67aef", null ],
+    [ "FILE_READER", "audio__use__case__tunnel_8c.html#a8076e745d84839e61207752557eba3c6", null ],
+    [ "MP3_ROLE", "audio__use__case__tunnel_8c.html#a79b1b9b715a60a6095dd7e64149dd818", null ],
+    [ "SINK_NAME", "audio__use__case__tunnel_8c.html#a629fa5ed28ec41a1cff695c64a85beea", null ],
+    [ "VORBIS_ROLE", "audio__use__case__tunnel_8c.html#a121382efe3f93afb72c806193070523c", null ],
+    [ "audiodecEventHandler", "audio__use__case__tunnel_8c.html#a65616e200478f2962153af8b2cdd2a8c", null ],
+    [ "audiosinkEventHandler", "audio__use__case__tunnel_8c.html#aa198a2c82aa15cd4492af97e043d6c60", null ],
+    [ "display_help", "audio__use__case__tunnel_8c.html#a8f0b63bf650a5ceefc36d7e3bcb02f63", null ],
+    [ "filereaderEventHandler", "audio__use__case__tunnel_8c.html#a3c3a42e6ec055c71b3f0353680fba0cc", null ],
+    [ "main", "audio__use__case__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
+    [ "volumeEventHandler", "audio__use__case__tunnel_8c.html#a6310b691ff2cd987cbf2b7382f2acafa", null ],
+    [ "appPriv", "audio__use__case__tunnel_8c.html#aef8e73812694e872b898c24afac4b2c2", null ],
+    [ "audiodeccallbacks", "audio__use__case__tunnel_8c.html#ac561d7909c8874e1a70524c627714bb8", null ],
+    [ "audiosinkcallbacks", "audio__use__case__tunnel_8c.html#a30de858bb1d263019ac50d6ceb70ae54", null ],
+    [ "filereadercallbacks", "audio__use__case__tunnel_8c.html#a19c30e4229accdbf5d75b1dea75b4778", null ],
+    [ "flagIsGain", "audio__use__case__tunnel_8c.html#a639b49ecc44734e0e8a7f97fbd63da63", null ],
+    [ "flagPlaybackOn", "audio__use__case__tunnel_8c.html#a417342b665f180354c036af7abd6be1a", null ],
+    [ "flagSetupTunnel", "audio__use__case__tunnel_8c.html#ab66325d953ee4ec1b16f5ea10c3d3adc", null ],
+    [ "flagUsingFFMpeg", "audio__use__case__tunnel_8c.html#a7fa5b11d377f24aa74609a5afbd5d2fc", null ],
+    [ "input_file", "audio__use__case__tunnel_8c.html#aa4f3a15de34c409bdec6ceacf93078ed", null ],
+    [ "volumecallbacks", "audio__use__case__tunnel_8c.html#a804af122fe66c6073fa4a144a6052805", null ]
+];

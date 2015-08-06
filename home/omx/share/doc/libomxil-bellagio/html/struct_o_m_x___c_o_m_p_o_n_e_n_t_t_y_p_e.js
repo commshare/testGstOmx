@@ -1,0 +1,25 @@
+var struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e =
+[
+    [ "AllocateBuffer", "group__buf.html#ga2c1edc85577d36e53c8ca1d3852a3638", null ],
+    [ "ComponentDeInit", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a500e4b59b932bd7e6d1a2d8f397d7c67", null ],
+    [ "ComponentRoleEnum", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a976a69d5a502b51fb17fc8b191de6ead", null ],
+    [ "ComponentTunnelRequest", "group__tun.html#gaeaf4019ea6edc13870951cb43fe9f56a", null ],
+    [ "EmptyThisBuffer", "group__buf.html#gaddab9204cf2616331495801e1ba53317", null ],
+    [ "FillThisBuffer", "group__buf.html#gaf4a321a8054eb3f69ceed82bf8dedcc5", null ],
+    [ "FreeBuffer", "group__buf.html#ga7085000f9f7021871078c0dcd27c07ae", null ],
+    [ "GetComponentVersion", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#ab51127d969e63099131baa5bd58826a7", null ],
+    [ "GetConfig", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a40042eb121e37461ceb851995d450a03", null ],
+    [ "GetExtensionIndex", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a4a6e297f1eacad68a037dcf5ee0f7fa9", null ],
+    [ "GetParameter", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a6dbfc4532045b381d3b2a73e9ddf567b", null ],
+    [ "GetState", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a75a4b01f258ee63eeb8b6185ea6476b9", null ],
+    [ "nSize", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a013b384b3e575097e5b608c7b879451d", null ],
+    [ "nVersion", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a6f5edba81abbdae76457fb17004c8e5f", null ],
+    [ "pApplicationPrivate", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a8c4fef89bceb35cfcf37ef5ed5eef2ac", null ],
+    [ "pComponentPrivate", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#abc8e77802b35b35f7972e9fe7a563ccc", null ],
+    [ "SendCommand", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a7ce31bd07980da3aba9bc0a393e953df", null ],
+    [ "SetCallbacks", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a5643e05728cb15c8e16c1dc1cb39577a", null ],
+    [ "SetConfig", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a0b474b5dd1c0e432e44d2f1ca15984c3", null ],
+    [ "SetParameter", "struct_o_m_x___c_o_m_p_o_n_e_n_t_t_y_p_e.html#a0264daf0b4a5a5c91de28533e26fb8a0", null ],
+    [ "UseBuffer", "group__buf.html#ga12c8b01e7b15e27abe461e6f5ec6cc1e", null ],
+    [ "UseEGLImage", "group__buf.html#gaafe5f95cb766d81c7e7ae4a85fb7b53d", null ]
+];

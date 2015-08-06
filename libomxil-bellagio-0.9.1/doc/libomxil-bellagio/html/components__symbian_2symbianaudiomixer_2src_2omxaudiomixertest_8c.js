@@ -1,0 +1,27 @@
+var components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c =
+[
+    [ "BUFFER_COUNT_ACTUAL", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a9d681b808f925ee62807c10ef5ecb510", null ],
+    [ "FRAME_SIZE", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#af9b1b2ba12857a4bf11289dac8c5462d", null ],
+    [ "SINK_NAME", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a629fa5ed28ec41a1cff695c64a85beea", null ],
+    [ "audiomixerEmptyBufferDone", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#ab6821ffb4a360fe8b04b5ff1fc0c3596", null ],
+    [ "audiomixerEventHandler", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a226c6e797aeca0cea32d83147deee5e6", null ],
+    [ "audiomixerFillBufferDone", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a05685d909dc037b9aca2407712092d79", null ],
+    [ "audiosinkEmptyBufferDone", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#ad4f5611960a503ba0d0b26ed9f3aa969", null ],
+    [ "audiosinkEventHandler", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#aa198a2c82aa15cd4492af97e043d6c60", null ],
+    [ "main", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
+    [ "appPriv", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#aef8e73812694e872b898c24afac4b2c2", null ],
+    [ "fd", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a6f8059414f0228f0256115e024eeed4b", null ],
+    [ "fd1", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#ac62faf1ed925a0da21ba52b228cb9a47", null ],
+    [ "filesize", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a613e2963514a5e256a448f708c1af880", null ],
+    [ "filesize1", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#af279763a5065195081e83aef9804fb4a", null ],
+    [ "flagChannel", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a9ce58592717987debea6194b74e27007", null ],
+    [ "flagIsGain", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a331601d60477cd7dbbdef88988b377ea", null ],
+    [ "flagPlaybackOn", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a417342b665f180354c036af7abd6be1a", null ],
+    [ "flagSampleRate", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#ae7fd72e4a98d91fcd4c25215f1b616f2", null ],
+    [ "flagSetupTunnel", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#ab66325d953ee4ec1b16f5ea10c3d3adc", null ],
+    [ "inBuffer", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#ad9f1e85c6c6cf6768a04ec8632206b39", null ],
+    [ "inBufferSink", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a22afa354a65189735d303ba4094e5e1a", null ],
+    [ "input_file", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a74353e0b56769fc90994e7a0dda5d040", null ],
+    [ "outBuffer", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a4cea837d754df7b4bfd8fbe84f82ebda", null ],
+    [ "output_file", "components__symbian_2symbianaudiomixer_2src_2omxaudiomixertest_8c.html#a95494f20e295a6f609b6ca642e48f683", null ]
+];

@@ -1,0 +1,13 @@
+prefix=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/home/omx
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+toolsdir=${exec_prefix}/bin
+pluginsdir=${libdir}/bellagio
+
+Name: libomxil
+Description: OpenMAX Integration Layer library
+Version: 0.9.1
+Libs: -L${libdir} -lomxil-bellagio
+Cflags: -I${includedir} -I${includedir}/bellagio
+

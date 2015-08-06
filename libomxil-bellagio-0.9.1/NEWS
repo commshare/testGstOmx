@@ -1,0 +1,6 @@
+The OpenMAX IL Bellagio package ver. 0.9.1 has been released. 
+The main additions to this delivery are:
+
+ - A new Jpeg encoder decoder
+ - Added omx_base_image_port base class
+

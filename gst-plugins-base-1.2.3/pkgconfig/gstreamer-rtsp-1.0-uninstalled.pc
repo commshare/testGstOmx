@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs
+girdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/rtsp
+typelibdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/rtsp
+
+Name: GStreamer RTSP Library, Uninstalled
+Description: RTSP base classes and helper functions, uninstalled
+Version: 1.2.3
+Requires: gstreamer-1.0 gstreamer-sdp-1.0 gio-2.0
+Libs: /home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/rtsp/libgstrtsp-1.0.la
+Cflags: -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs
+

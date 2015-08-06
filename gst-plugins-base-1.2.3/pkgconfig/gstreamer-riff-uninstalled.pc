@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs
+girdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/riff
+typelibdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/riff
+
+Name: GStreamer RIFF Library, Uninstalled
+Description: RIFF helper functions, uninstalled
+Version: 1.2.3
+Requires: gstreamer-1.0
+Libs: /home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/riff/libgstriff-1.0.la
+Cflags: -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs
+

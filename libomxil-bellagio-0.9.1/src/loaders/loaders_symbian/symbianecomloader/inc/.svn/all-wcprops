@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/omxil/!svn/ver/557/libomxil/trunk/src/loaders/loaders_symbian/symbianecomloader/inc
+END
+nrc_symbian_component_loader.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/omxil/!svn/ver/557/libomxil/trunk/src/loaders/loaders_symbian/symbianecomloader/inc/nrc_symbian_component_loader.h
+END
+BellagioOpenMaxSymbianLoaderImplUid.hrh
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/omxil/!svn/ver/544/libomxil/trunk/src/loaders/loaders_symbian/symbianecomloader/inc/BellagioOpenMaxSymbianLoaderImplUid.hrh
+END
+BellagioOpenMaxSymbianLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/omxil/!svn/ver/557/libomxil/trunk/src/loaders/loaders_symbian/symbianecomloader/inc/BellagioOpenMaxSymbianLoader.h
+END

@@ -1,0 +1,19 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/gst
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3
+toolsdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/tools
+pluginsdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3
+girdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/gst
+typelibdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/gst
+
+Name: GStreamer Uninstalled
+Description: Streaming media framework, Not Installed
+Version: 1.2.3
+Requires: glib-2.0, gobject-2.0
+Requires.private: gmodule-no-export-2.0
+Libs: /home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/gst/libgstreamer-1.0.la
+# FIXME: the libs dir doesn't really belong here
+Cflags: -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3 -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3 -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs

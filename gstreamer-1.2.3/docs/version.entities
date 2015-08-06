@@ -1,0 +1,3 @@
+<!ENTITY GST_API_VERSION "1.0">
+<!ENTITY GST_VERSION "1.2.3">
+<!ENTITY GST_PLUGINS_DIR "/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/home/gst/lib/gstreamer-1.0">

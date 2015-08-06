@@ -1,0 +1,15 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs/gst/check
+includedir=
+girdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs/gst/check
+typelibdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs/gst/check
+
+Name: GStreamer check unit testing, uninstalled
+Description: Unit testing helper library for GStreamer modules, Not Installed
+Requires: gstreamer-1.0 = 1.2.3
+Version: 1.2.3
+
+Libs: /home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs/gst/check/libgstcheck-1.0.la -lm
+Cflags: -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gstreamer-1.2.3/libs

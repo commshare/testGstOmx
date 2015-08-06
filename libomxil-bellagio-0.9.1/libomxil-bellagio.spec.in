@@ -1,0 +1,92 @@
+
+Name: libomxil-bellagio
+Version: @VERSION@
+Release: 0
+License: GNU LGPL
+Group: System Environment/Libraries
+Source: %{name}-%{version}.tar.gz
+BuildRoot: %{_tmppath}/%{name}-%{version}-root
+Summary: OpenMAX Integration Layer 1.1.1 library and components.
+Vendor: STMicroelectronics
+
+%description
+The OpenMAX IL API defines a standardized media component interface to
+enable developers and platform providers to integrate and communicate
+with multimedia codecs implemented in hardware or software.
+
+The libomxil shared library implements the OpenMAX IL Core functionalities.
+Three dynamically loadable components are also included: OMX alsa sink
+component, OMX mp3,aac,ogg decoder component and OMX volume control component.
+(requires ffmpeg library, not part of this package).
+
+%prep
+%setup
+%build
+%configure
+
+make
+
+%install
+%makeinstall
+
+%clean
+[ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" != / ] && rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root)
+%doc ChangeLog README TODO
+%{_bindir}/omxregister-bellagio
+%{_includedir}/OMX_Audio.h
+%{_includedir}/OMX_Component.h
+%{_includedir}/OMX_ContentPipe.h
+%{_includedir}/OMX_Core.h
+%{_includedir}/OMX_IVCommon.h
+%{_includedir}/OMX_Image.h
+%{_includedir}/OMX_Index.h
+%{_includedir}/OMX_Other.h
+%{_includedir}/OMX_Types.h
+%{_includedir}/OMX_Video.h
+%{_libdir}/libomxil-bellagio.a
+%{_libdir}/libomxil-bellagio.la
+%{_libdir}/libomxil-bellagio.so.0
+%{_libdir}/libomxil-bellagio.so.0.0.0
+%{_libdir}/bellagio/libomxalsa.so
+%{_libdir}/bellagio/libomxaudio_effects.so
+%{_libdir}/bellagio/libomxclocksrc.so
+%{_libdir}/bellagio/libomxfbdev.so
+%{_libdir}/bellagio/libomxvideosrc.so
+%{_libdir}/bellagio/libomxcamera.so
+%{_libdir}/bellagio/libomxffmpeg.so
+%{_libdir}/bellagio/libomxfilereader.so
+%{_libdir}/bellagio/libomxmad.so
+%{_libdir}/bellagio/libomxparser3gp.so
+%{_libdir}/bellagio/libomxvorbis.so
+%{_libdir}/bellagio/libomximagejpeg.so
+
+%changelog
+* Wed Sep 17 2008 Giulio Urlini
+- added jpeg encoder/decoder
+* Mon Jul 07 2008 Giulio Urlini
+- added clock source, video source, camera, frame buffer writer
+* Thu Mar 06 2008 Marc-Andre Lureau
+- copy&pasted some good practices from some other .spec.in
+- changed components directory
+- remove unnecessary plugins .la and .a files
+- untested
+* Wed Feb 27 2008 Giulio Urlini
+- changed the library list.
+* Fri Oct 19 2007 Giulio Urlini
+- removed fbdev from file list. It is experimental,
+  and not installed on any platform
+* Tue Oct 01 2007 Giulio Urlini
+- Minor update and name change of this file
+* Tue Jun 04 2007 Giulio Urlini
+- Bellagio 0.3.2 release
+* Tue May 22 2007 Giulio Urlini
+- Bellagio 0.3.1 release
+* Fri Apr 06 2007 Giulio Urlini
+- Bellagio 0.3 release
+* Fri Feb 24 2006 David Siorpaes
+- Fixed some minor issues in build process
+* Mon Feb 6 2006 Giulio Urlini
+- First build attempt

@@ -1,0 +1,758 @@
+Terminals unused in grammar
+
+   '.'
+   '!'
+   '='
+
+
+状态 15 conflicts: 7 shift/reduce, 1 reduce/reduce
+状态 22 conflicts: 2 shift/reduce
+状态 23 conflicts: 6 shift/reduce, 1 reduce/reduce
+状态 24 conflicts: 7 shift/reduce, 1 reduce/reduce
+状态 26 conflicts: 6 shift/reduce, 1 reduce/reduce
+状态 27 conflicts: 1 shift/reduce
+状态 28 conflicts: 7 shift/reduce, 1 reduce/reduce
+状态 37 conflicts: 1 shift/reduce
+
+
+语法
+
+    0 $accept: graph $end
+
+    1 element: IDENTIFIER
+    2        | element ASSIGNMENT
+
+    3 assignments: %empty
+    4            | assignments ASSIGNMENT
+
+    5 bin: '(' assignments chain ')'
+    6    | BINREF assignments chain ')'
+    7    | BINREF assignments ')'
+    8    | BINREF assignments error ')'
+
+    9 pads: PADREF
+   10     | PADREF padlist
+
+   11 padlist: ',' IDENTIFIER
+   12        | ',' IDENTIFIER padlist
+
+   13 reference: REF
+   14          | REF padlist
+
+   15 linkpart: reference
+   16         | pads
+   17         | %empty
+
+   18 link: linkpart LINK linkpart
+
+   19 linklist: link
+   20         | link linklist
+   21         | linklist error
+
+   22 chain: element
+   23      | bin
+   24      | chain chain
+   25      | chain linklist
+   26      | chain error
+   27      | link chain
+   28      | PARSE_URL chain
+   29      | link PARSE_URL
+
+   30 graph: %empty
+   31      | chain
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'!' (33)
+'(' (40) 5
+')' (41) 5 6 7 8
+',' (44) 11 12
+'.' (46)
+'=' (61)
+error (256) 8 21 26
+PARSE_URL (258) 28 29
+IDENTIFIER (259) 1 11 12
+REF (260) 13 14
+PADREF (261) 9 10
+BINREF (262) 6 7 8
+ASSIGNMENT (263) 2 4
+LINK (264) 18
+
+
+Nonterminals, with rules where they appear
+
+$accept (16)
+    左： 0
+element (17)
+    左： 1 2, 右： 2 22
+assignments (18)
+    左： 3 4, 右： 4 5 6 7 8
+bin (19)
+    左： 5 6 7 8, 右： 23
+pads (20)
+    左： 9 10, 右： 16
+padlist (21)
+    左： 11 12, 右： 10 12 14
+reference (22)
+    左： 13 14, 右： 15
+linkpart (23)
+    左： 15 16 17, 右： 18
+link (24)
+    左： 18, 右： 19 20 27 29
+linklist (25)
+    左： 19 20 21, 右： 20 21 25
+chain (26)
+    左： 22 23 24 25 26 27 28 29, 右： 5 6 24 25 26 27 28 31
+graph (27)
+    左： 30 31, 右： 0
+
+
+State 0
+
+    0 $accept: . graph $end
+
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    $end      reduce using rule 30 (graph)
+    $default  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 12
+    chain      转到状态 13
+    graph      转到状态 14
+
+
+State 1
+
+   28 chain: PARSE_URL . chain
+
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    $default  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 12
+    chain      转到状态 15
+
+
+State 2
+
+    1 element: IDENTIFIER .
+
+    $default  reduce using rule 1 (element)
+
+
+State 3
+
+   13 reference: REF .
+   14          | REF . padlist
+
+    ','  shift, and go to state 16
+
+    $default  reduce using rule 13 (reference)
+
+    padlist  转到状态 17
+
+
+State 4
+
+    9 pads: PADREF .
+   10     | PADREF . padlist
+
+    ','  shift, and go to state 16
+
+    $default  reduce using rule 9 (pads)
+
+    padlist  转到状态 18
+
+
+State 5
+
+    6 bin: BINREF . assignments chain ')'
+    7    | BINREF . assignments ')'
+    8    | BINREF . assignments error ')'
+
+    $default  reduce using rule 3 (assignments)
+
+    assignments  转到状态 19
+
+
+State 6
+
+    5 bin: '(' . assignments chain ')'
+
+    $default  reduce using rule 3 (assignments)
+
+    assignments  转到状态 20
+
+
+State 7
+
+    2 element: element . ASSIGNMENT
+   22 chain: element .
+
+    ASSIGNMENT  shift, and go to state 21
+
+    $default  reduce using rule 22 (chain)
+
+
+State 8
+
+   23 chain: bin .
+
+    $default  reduce using rule 23 (chain)
+
+
+State 9
+
+   16 linkpart: pads .
+
+    $default  reduce using rule 16 (linkpart)
+
+
+State 10
+
+   15 linkpart: reference .
+
+    $default  reduce using rule 15 (linkpart)
+
+
+State 11
+
+   18 link: linkpart . LINK linkpart
+
+    LINK  shift, and go to state 22
+
+
+State 12
+
+   27 chain: link . chain
+   29      | link . PARSE_URL
+
+    PARSE_URL   shift, and go to state 23
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    $default  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 12
+    chain      转到状态 24
+
+
+State 13
+
+   24 chain: chain . chain
+   25      | chain . linklist
+   26      | chain . error
+   31 graph: chain .
+
+    error       shift, and go to state 25
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    $end  reduce using rule 31 (graph)
+    LINK  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 26
+    linklist   转到状态 27
+    chain      转到状态 28
+
+
+State 14
+
+    0 $accept: graph . $end
+
+    $end  shift, and go to state 29
+
+
+State 15
+
+   24 chain: chain . chain
+   25      | chain . linklist
+   26      | chain . error
+   28      | PARSE_URL chain .
+
+    error       shift, and go to state 25
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    $end        reduce using rule 28 (chain)
+    error       [reduce using rule 28 (chain)]
+    PARSE_URL   [reduce using rule 28 (chain)]
+    IDENTIFIER  [reduce using rule 28 (chain)]
+    REF         [reduce using rule 28 (chain)]
+    PADREF      [reduce using rule 28 (chain)]
+    BINREF      [reduce using rule 28 (chain)]
+    LINK        reduce using rule 17 (linkpart)
+    LINK        [reduce using rule 28 (chain)]
+    '('         [reduce using rule 28 (chain)]
+    ')'         reduce using rule 28 (chain)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 26
+    linklist   转到状态 27
+    chain      转到状态 28
+
+
+State 16
+
+   11 padlist: ',' . IDENTIFIER
+   12        | ',' . IDENTIFIER padlist
+
+    IDENTIFIER  shift, and go to state 30
+
+
+State 17
+
+   14 reference: REF padlist .
+
+    $default  reduce using rule 14 (reference)
+
+
+State 18
+
+   10 pads: PADREF padlist .
+
+    $default  reduce using rule 10 (pads)
+
+
+State 19
+
+    4 assignments: assignments . ASSIGNMENT
+    6 bin: BINREF assignments . chain ')'
+    7    | BINREF assignments . ')'
+    8    | BINREF assignments . error ')'
+
+    error       shift, and go to state 31
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    ASSIGNMENT  shift, and go to state 32
+    '('         shift, and go to state 6
+    ')'         shift, and go to state 33
+
+    LINK  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 12
+    chain      转到状态 34
+
+
+State 20
+
+    4 assignments: assignments . ASSIGNMENT
+    5 bin: '(' assignments . chain ')'
+
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    ASSIGNMENT  shift, and go to state 32
+    '('         shift, and go to state 6
+
+    $default  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 12
+    chain      转到状态 35
+
+
+State 21
+
+    2 element: element ASSIGNMENT .
+
+    $default  reduce using rule 2 (element)
+
+
+State 22
+
+   18 link: linkpart LINK . linkpart
+
+    REF     shift, and go to state 3
+    PADREF  shift, and go to state 4
+
+    REF       [reduce using rule 17 (linkpart)]
+    PADREF    [reduce using rule 17 (linkpart)]
+    $default  reduce using rule 17 (linkpart)
+
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 36
+
+
+State 23
+
+   28 chain: PARSE_URL . chain
+   29      | link PARSE_URL .
+
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    PARSE_URL   [reduce using rule 29 (chain)]
+    IDENTIFIER  [reduce using rule 29 (chain)]
+    REF         [reduce using rule 29 (chain)]
+    PADREF      [reduce using rule 29 (chain)]
+    BINREF      [reduce using rule 29 (chain)]
+    LINK        reduce using rule 17 (linkpart)
+    LINK        [reduce using rule 29 (chain)]
+    '('         [reduce using rule 29 (chain)]
+    $default    reduce using rule 29 (chain)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 12
+    chain      转到状态 15
+
+
+State 24
+
+   24 chain: chain . chain
+   25      | chain . linklist
+   26      | chain . error
+   27      | link chain .
+
+    error       shift, and go to state 25
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    $end        reduce using rule 27 (chain)
+    error       [reduce using rule 27 (chain)]
+    PARSE_URL   [reduce using rule 27 (chain)]
+    IDENTIFIER  [reduce using rule 27 (chain)]
+    REF         [reduce using rule 27 (chain)]
+    PADREF      [reduce using rule 27 (chain)]
+    BINREF      [reduce using rule 27 (chain)]
+    LINK        reduce using rule 17 (linkpart)
+    LINK        [reduce using rule 27 (chain)]
+    '('         [reduce using rule 27 (chain)]
+    ')'         reduce using rule 27 (chain)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 26
+    linklist   转到状态 27
+    chain      转到状态 28
+
+
+State 25
+
+   26 chain: chain error .
+
+    $default  reduce using rule 26 (chain)
+
+
+State 26
+
+   19 linklist: link .
+   20         | link . linklist
+   27 chain: link . chain
+   29      | link . PARSE_URL
+
+    PARSE_URL   shift, and go to state 23
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    PARSE_URL   [reduce using rule 19 (linklist)]
+    IDENTIFIER  [reduce using rule 19 (linklist)]
+    REF         [reduce using rule 19 (linklist)]
+    PADREF      [reduce using rule 19 (linklist)]
+    BINREF      [reduce using rule 19 (linklist)]
+    LINK        reduce using rule 17 (linkpart)
+    LINK        [reduce using rule 19 (linklist)]
+    '('         [reduce using rule 19 (linklist)]
+    $default    reduce using rule 19 (linklist)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 26
+    linklist   转到状态 37
+    chain      转到状态 24
+
+
+State 27
+
+   21 linklist: linklist . error
+   25 chain: chain linklist .
+
+    error  shift, and go to state 38
+
+    $end        reduce using rule 25 (chain)
+    error       [reduce using rule 25 (chain)]
+    PARSE_URL   reduce using rule 25 (chain)
+    IDENTIFIER  reduce using rule 25 (chain)
+    REF         reduce using rule 25 (chain)
+    PADREF      reduce using rule 25 (chain)
+    BINREF      reduce using rule 25 (chain)
+    LINK        reduce using rule 25 (chain)
+    '('         reduce using rule 25 (chain)
+    ')'         reduce using rule 25 (chain)
+
+
+State 28
+
+   24 chain: chain . chain
+   24      | chain chain .
+   25      | chain . linklist
+   26      | chain . error
+
+    error       shift, and go to state 25
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+
+    $end        reduce using rule 24 (chain)
+    error       [reduce using rule 24 (chain)]
+    PARSE_URL   [reduce using rule 24 (chain)]
+    IDENTIFIER  [reduce using rule 24 (chain)]
+    REF         [reduce using rule 24 (chain)]
+    PADREF      [reduce using rule 24 (chain)]
+    BINREF      [reduce using rule 24 (chain)]
+    LINK        reduce using rule 17 (linkpart)
+    LINK        [reduce using rule 24 (chain)]
+    '('         [reduce using rule 24 (chain)]
+    ')'         reduce using rule 24 (chain)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 26
+    linklist   转到状态 27
+    chain      转到状态 28
+
+
+State 29
+
+    0 $accept: graph $end .
+
+    $default  接受
+
+
+State 30
+
+   11 padlist: ',' IDENTIFIER .
+   12        | ',' IDENTIFIER . padlist
+
+    ','  shift, and go to state 16
+
+    $default  reduce using rule 11 (padlist)
+
+    padlist  转到状态 39
+
+
+State 31
+
+    8 bin: BINREF assignments error . ')'
+
+    ')'  shift, and go to state 40
+
+
+State 32
+
+    4 assignments: assignments ASSIGNMENT .
+
+    $default  reduce using rule 4 (assignments)
+
+
+State 33
+
+    7 bin: BINREF assignments ')' .
+
+    $default  reduce using rule 7 (bin)
+
+
+State 34
+
+    6 bin: BINREF assignments chain . ')'
+   24 chain: chain . chain
+   25      | chain . linklist
+   26      | chain . error
+
+    error       shift, and go to state 25
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+    ')'         shift, and go to state 41
+
+    LINK  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 26
+    linklist   转到状态 27
+    chain      转到状态 28
+
+
+State 35
+
+    5 bin: '(' assignments chain . ')'
+   24 chain: chain . chain
+   25      | chain . linklist
+   26      | chain . error
+
+    error       shift, and go to state 25
+    PARSE_URL   shift, and go to state 1
+    IDENTIFIER  shift, and go to state 2
+    REF         shift, and go to state 3
+    PADREF      shift, and go to state 4
+    BINREF      shift, and go to state 5
+    '('         shift, and go to state 6
+    ')'         shift, and go to state 42
+
+    LINK  reduce using rule 17 (linkpart)
+
+    element    转到状态 7
+    bin        转到状态 8
+    pads       转到状态 9
+    reference  转到状态 10
+    linkpart   转到状态 11
+    link       转到状态 26
+    linklist   转到状态 27
+    chain      转到状态 28
+
+
+State 36
+
+   18 link: linkpart LINK linkpart .
+
+    $default  reduce using rule 18 (link)
+
+
+State 37
+
+   20 linklist: link linklist .
+   21         | linklist . error
+
+    error  shift, and go to state 38
+
+    $end        reduce using rule 20 (linklist)
+    error       [reduce using rule 20 (linklist)]
+    PARSE_URL   reduce using rule 20 (linklist)
+    IDENTIFIER  reduce using rule 20 (linklist)
+    REF         reduce using rule 20 (linklist)
+    PADREF      reduce using rule 20 (linklist)
+    BINREF      reduce using rule 20 (linklist)
+    LINK        reduce using rule 20 (linklist)
+    '('         reduce using rule 20 (linklist)
+    ')'         reduce using rule 20 (linklist)
+
+
+State 38
+
+   21 linklist: linklist error .
+
+    $default  reduce using rule 21 (linklist)
+
+
+State 39
+
+   12 padlist: ',' IDENTIFIER padlist .
+
+    $default  reduce using rule 12 (padlist)
+
+
+State 40
+
+    8 bin: BINREF assignments error ')' .
+
+    $default  reduce using rule 8 (bin)
+
+
+State 41
+
+    6 bin: BINREF assignments chain ')' .
+
+    $default  reduce using rule 6 (bin)
+
+
+State 42
+
+    5 bin: '(' assignments chain ')' .
+
+    $default  reduce using rule 5 (bin)

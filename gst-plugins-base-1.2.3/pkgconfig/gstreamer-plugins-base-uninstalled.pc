@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs
+pluginsdir=/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3
+
+Name: GStreamer Base Plugins Libraries, Uninstalled
+Description: Streaming media framework, base plugins libraries, uninstalled
+Version: 1.2.3
+Requires: gstreamer-1.0
+Libs: -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/allocators -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/app -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/audio -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/fft -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/pbutils -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/riff -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/rtp -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/rtsp -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/sdp -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/tag -L/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs/gst/video
+Cflags: -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs -I/home/zhangbin/zbhome/omx/bsp/ns115/media/scomx/gst/gst-plugins-base-1.2.3/gst-libs
+
+libraries=allocators app audio fft pbutils riff rtp rtsp sdp tag video

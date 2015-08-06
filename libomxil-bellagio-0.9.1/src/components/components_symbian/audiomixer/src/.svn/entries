@@ -1,0 +1,54 @@
+8
+
+dir
+631
+https://omxil.svn.sourceforge.net/svnroot/omxil/libomxil/trunk/src/components/components_symbian/audiomixer/src
+https://omxil.svn.sourceforge.net/svnroot/omxil
+
+
+
+2008-06-12T12:18:04.911720Z
+544
+felipec
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d11a7513-620d-0410-9d76-e80dcb6a9808
+
+BellagioOpenMaxAudioMixerImplFactory.cpp
+file
+
+
+
+
+2008-09-18T09:44:29.000000Z
+064b8807d2c70e2ad9613f17b17bc1ce
+2008-06-12T12:18:04.911720Z
+544
+felipec
+has-props
+
+BellagioOpenMaxAudioMixer.cpp
+file
+
+
+
+
+2008-09-18T09:44:29.000000Z
+fcd17cc4d580671ac42bca258dbd13d2
+2008-06-12T12:18:04.911720Z
+544
+felipec
+has-props
+
